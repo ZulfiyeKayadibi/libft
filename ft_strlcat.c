@@ -1,32 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/19 14:07:18 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/02 07:07:04 by zkayadib         ###   ########.fr       */
+/*   Created: 2024/11/02 03:19:47 by zkayadib          #+#    #+#             */
+/*   Updated: 2024/11/02 07:05:58 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
+	size_t	j;
 
 	i = 0;
-	while (s[i])
+	j = 0;
+	while (dst[i] && i < dstsize)
 		i++;
-	return (i);
+	while (src[j] && (i + j + 1) < dstsize)
+	{
+		dst[i + j] = src[j];
+		j++;
+	}
+	if (i < dstsize)
+		dst[i + j] = '\0';
+	return (i + ft_strlen(src));
 }
 
-//int main ()
-//{
-//	char z[] = "zulfiye";
-//	printf("%zu\n", ft_strlen(z));
-//	printf("%zu\n", strlen(z));
-//}
+/*int main ()
+{
+	char a[] = "zulfiye";
+	char c[] = "zulfiye";
+	char b[] = "dilek";
+	char d[] = "dilek";
+	printf("%zu", ft_strlcat(a, b, 7));
+	printf("%zu", strlcat(c, d, 7));
+}*/

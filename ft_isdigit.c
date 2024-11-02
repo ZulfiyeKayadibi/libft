@@ -6,11 +6,11 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 14:05:21 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/10/19 14:06:40 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/10/20 19:16:19 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int c)
+int	ft_isdigit(int c)
 {
-	return (c >= '0' && c <= 9);
+	return (c >= '0' && c <= '9');
 }
