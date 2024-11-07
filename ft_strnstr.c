@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/19 12:40:26 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/07 23:23:54 by zkayadib         ###   ########.fr       */
+/*   Created: 2024/11/04 13:58:24 by zkayadib          #+#    #+#             */
+/*   Updated: 2024/11/05 10:13:13 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int	i;
+	char	*s1;
+	char	*s2;
+	size_t	i;
+	size_t	j;
 
+	s1 = (char *)(haystack);
+	s2 = (char *)(needle);
 	i = 0;
-	while (s[i] != (char)c)
+	j = 0;
+	if (s2[j] == '\0')
+		return (s1);
+	while (s1[i] && s2[j] && i < len)
 	{
-		if (s[i] == '\0')
-			return (NULL);
+		j = 0;
+		while ((s1[i + j] == s2[j] || s2[j] == '\0') && i + j <= len)
+		{
+			if (s2[j] == '\0' && ft_strlen(s2) == j)
+				return (&s1[i]);
+			j ++;
+		}
 		i ++;
 	}
-	return ((char *)(s + i));
+	return (NULL);
 }
-
-//int main ()
-//{
-//	const char z[] = "zulfiye";
-
-//	printf("%s\n", ft_strchr(z, 'i'));
-//	printf("%s\n", strchr(z, 'i'));
-//}

@@ -6,7 +6,7 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 20:56:52 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/02 07:02:10 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/04 00:02:27 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		n_dst = ft_memcpy(dst, src, len);
 	return (n_dst);
 }
-/*int main ()
-{
-	char a[] = "zulfiye";
-	//char c[] = "samet";
-	char b[] = "zulfiye";
-	
-	printf("%s\n", ft_memmove(a + 2, a, 3));
-	printf("%s\n", memmove(b + 2, b, 3));
-
-}*/

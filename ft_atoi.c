@@ -1,18 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/19 14:25:48 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/07 16:17:04 by zkayadib         ###   ########.fr       */
+/*   Created: 2024/11/07 14:47:21 by zkayadib          #+#    #+#             */
+/*   Updated: 2024/11/07 15:43:52 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c)
+#include "libft.h"
+
+int	ft_atoi(const char *str)
 {
-	if (c >= 'A' && c <= 'Z')
-		c += 32;
-	return (c);
+	int	i;
+	int	size;
+	int	result;
+
+	i = 0;
+	size = 1;
+	result = 0;
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+		i ++;
+	if (str[i] == '+' || str[i] == '-')
+	{
+		if (str[i] == '-')
+			size = -1;
+		i ++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		result *= 10;
+		result += str[i] - 48;
+		i ++;
+	}
+	return (size * result);
 }
