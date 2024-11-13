@@ -6,7 +6,7 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 18:24:14 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/02 07:06:39 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:50:11 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,19 +28,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (ft_strlen(src));
 }
-/*
-int main ()
-{
-	char a[] = "zulfiye";
-	char b[] = "dilek";
-
-	printf("%zu\n", ft_strlcpy(a, b, st_));
-	int i;
-
-	i = 0;
-	while (i < 6)
-	{
-	printf("%c", a[i++]);
-	}	
-}
-*/

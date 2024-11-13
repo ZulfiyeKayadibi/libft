@@ -6,19 +6,12 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 18:41:04 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/09 22:10:09 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 04:15:57 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-/*char deneme(unsigned int x, char y)
-{
-	(void)x;
-	y = y + 1;
-	return y;
-}*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*mllc;
@@ -38,9 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	mllc[i] = '\0';
 	return (mllc);
 }
-
-/*
-int main ()
-{
-	printf("%s\n", ft_strmapi("abcdefg", deneme));
-}*/

@@ -6,12 +6,11 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:20:04 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/10 20:51:29 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:50:34 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	ft_totalwords(const char *s, int c)
 {

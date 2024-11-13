@@ -6,11 +6,9 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 10:57:08 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/02 06:47:44 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:53:19 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 int	ft_isalnum(int c)
 {
@@ -18,8 +16,3 @@ int	ft_isalnum(int c)
 		|| (c >= 'A' && c <= 'Z')
 		|| (c >= '0' && c <= '9'));
 }
-
-//int main ()
-//{
-//    printf("%d\n", ft_isalnum('-'));
-//}

@@ -6,13 +6,11 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 20:56:52 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/04 00:02:27 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:51:32 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

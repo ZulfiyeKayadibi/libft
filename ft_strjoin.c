@@ -6,7 +6,7 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 21:31:50 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/07 21:49:29 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 04:07:57 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(c, s2, i + 1);
 	return (c);
 }
-
-/*int main ()
-{
-	char a[] = "zulfiye";
-	char b[] = "kayadibi";
-	
-	printf("%s", ft_strjoin(a, b));
-}*/

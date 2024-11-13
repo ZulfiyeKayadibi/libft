@@ -6,7 +6,7 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 12:40:26 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/07 23:23:54 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:50:30 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return ((char *)(s + i));
 }
-
-//int main ()
-//{
-//	const char z[] = "zulfiye";
-
-//	printf("%s\n", ft_strchr(z, 'i'));
-//	printf("%s\n", strchr(z, 'i'));
-//}

@@ -6,7 +6,7 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 03:19:47 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/02 07:05:58 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:50:17 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i + j] = '\0';
 	return (i + ft_strlen(src));
 }
-
-/*int main ()
-{
-	char a[] = "zulfiye";
-	char c[] = "zulfiye";
-	char b[] = "dilek";
-	char d[] = "dilek";
-	printf("%zu", ft_strlcat(a, b, 7));
-	printf("%zu", strlcat(c, d, 7));
-}*/

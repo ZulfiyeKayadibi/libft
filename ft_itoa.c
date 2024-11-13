@@ -6,12 +6,11 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 04:13:01 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/10 15:39:18 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 04:14:21 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static size_t	ft_sizeof_int(int n)
 {
@@ -49,7 +48,7 @@ char	*ft_itoa(int n)
 		n *= -1;
 	}
 	mllc[size - 1] = '\0';
-	while ((n > 9 && (size - 2) > 0) || ((mllc[0] == '-') && (size - 2) > 1))
+	while ((n > 9 && (size - 2) > 0))
 	{
 		mllc[size - 2] = (n % 10) + '0';
 		n = n / 10;
@@ -58,9 +57,3 @@ char	*ft_itoa(int n)
 	mllc[size - 2] = n + '0';
 	return (mllc);
 }
-
-/*int main ()
-{
-	printf("%s", ft_itoa(-2147483));
-}
-*/

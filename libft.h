@@ -6,14 +6,13 @@
 /*   By: zkayadib <zkayadib@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 18:24:49 by zkayadib          #+#    #+#             */
-/*   Updated: 2024/11/10 20:26:22 by zkayadib         ###   ########.fr       */
+/*   Updated: 2024/11/13 03:55:48 by zkayadib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
 # include <unistd.h>
 # include <stdlib.h>
 
