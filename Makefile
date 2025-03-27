@@ -32,23 +32,38 @@ ft_putchar_fd.c	\
 ft_putstr_fd.c	\
 ft_putendl_fd.c	\
 ft_putnbr_fd.c
+
+
+BONUS = ft_lstnew.c	\
+ft_lstadd_front.c	\
+ft_lstsize.c	\
+ft_lstlast.c	\
+ft_lstadd_back.c	\
+ft_lstdelone.c	\
+ft_lstclear.c	\
+ft_lstiter.c	\
+ft_lstmap.c
 	
-OBJS = ${SRCS:.c=.o}
+S_OBJS = ${SRCS:.c=.o}
+B_OBJS = ${BONUS:.c=.o}
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar r $(NAME) $(OBJS)
+$(NAME): $(S_OBJS)
+	ar r $(NAME) $(S_OBJS)
+
+bonus: $(S_OBJS) $(B_OBJS)
+	ar r $(NAME) $(S_OBJS) $(B_OBJS)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(S_OBJS) $(B_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all bonus clean fclean re
